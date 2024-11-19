@@ -8,12 +8,34 @@
     flex-direction: column;
     background-color: black;
 }
+.main{
+    display: flex;
+    height: 70vh;
+    background-image: url(Tagore_library.jpg);
+    background-size: cover;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    height: 15vh;
+    flex-direction: column;
+    background-color: black;
+}
 .heading{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 900;
     text-align: center;
     height: 40%;
     font-size: 2.5em;
+    flex-shrink: 2;
+    color: white;
+}
+.heading2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    text-align: center;
+    height: 30%;
+    font-size: 1.75em;
     flex-shrink: 2;
     color: white;
 }
@@ -24,6 +46,18 @@
     height: 30%;
     flex-shrink: 1;
 }
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 30%;
+    flex-shrink: 1;
+}
+.contact div{
+    display: inline;
+    font-size: 1.25em;
+    font-weight: 500;
+}
 .navigation div{
     display: inline;
     font-size: 1.5em;
@@ -32,10 +66,14 @@
 a{
     text-decoration: none;
     color: red;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
 }
 a:hover{
     background-color: white;
     color: black;
+}
+p{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
 }
