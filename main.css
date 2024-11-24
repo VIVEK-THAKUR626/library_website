@@ -13,7 +13,6 @@
     height: 70vh;
     background-image: url(Tagore_library.jpg);
     background-size: cover;
-    background-blend-mode: overlay;
     background-color: rgba(0, 0, 0, 0.5);
 }
 .footer{
