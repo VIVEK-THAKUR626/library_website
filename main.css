@@ -8,11 +8,13 @@
     flex-direction: column;
     background-color: black;
 }
-.main{
+.main {
     display: flex;
     height: 70vh;
     background-image: url(Tagore_library.jpg);
     background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .footer{
     display: flex;
@@ -68,15 +70,29 @@ a{
     color: red;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
 }
-a:hover{
+a:hover {
     background-color: white;
     color: black;
-    border: 3% solid white;
-    border-radius: 45%;
-    padding: 0.5em;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 0.3em;
+    transition: all 0.3s ease;
 }
+a:focus {
+    outline: 2px solid yellow;
+    background-color: black;
+}
+
 p{
     color: lightgreen;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    
+}
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2em;
+    }
+    .navigation div, .contact div {
+        font-size: 1.25em;
+    }
 }
