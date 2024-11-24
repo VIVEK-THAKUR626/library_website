@@ -77,11 +77,6 @@ a:hover {
     padding: 0.3em;
     transition: all 0.3s ease;
 }
-a:focus {
-    outline: 2px solid yellow;
-    background-color: black;
-}
-
 p{
     color: lightgreen;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
