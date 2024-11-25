@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+}
+body{
+    background-color: black;
+}
+label{
+    color: lightgreen;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#button{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: orange;
+    width: 15%;
+}
+input, label {
+    font-size: 1.2rem; /* Adjust font size */
+    width: 30%; /* Make input fields full-width */
+    margin-bottom: 15px; /* Add spacing between fields */
+}
+form {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    width: 60%;
+}
+
