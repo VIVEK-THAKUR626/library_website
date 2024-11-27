@@ -63,6 +63,7 @@
     display: inline;
     font-size: 1.5em;
     font-weight: 500;
+    flex-shrink: 1.25;
 }
 a{
     text-decoration: none;
