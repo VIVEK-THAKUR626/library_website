@@ -3,30 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>feedback</title>
+    <title>Feedback</title>
     <link rel="stylesheet" href="feedback.css">
 </head>
 <body>
-    <h1>USER FEEDBACK</h1>
-    <div class="form">
-     <form action="">
-        <label>Name :</label>
-        <input type="text" id="name">
-        <br>
-        <br>
-        <label>Email :</label>
-        <input type="Email" id="email">
-        <br>
-        <br>
-        <label>Student ID :</label>
-        <input type="number" id="roll">
-        <br>
-        <br>
-        <textarea cols="30" rows="6" placeholder="Give your feedback"></textarea>
-        <br>
-        <br>
-        <input type="submit" id="button">
-     </form>
+<div class="background">
+    <div class="heading">
+        <h1>USER FEEDBACK</h1>
     </div>
+    <div class="image">
+        <!-- Add an image if needed -->
+    </div>
+    <div class="form">
+        <form action="submit_feedback.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="roll">Student ID:</label>
+            <input type="number" id="roll" name="roll" required>
+            <br><br>
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" cols="30" rows="6" placeholder="Give your feedback" maxlength="500" required></textarea>
+            <br><br>
+            <input type="submit" id="button" value="Submit">
+        </form>
+    </div>
+</div>
 </body>
 </html>
