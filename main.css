@@ -85,12 +85,12 @@ p{
 .donate{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    background-color: darkred;
-    border: 0.75em solid darkred;
+    background-color: #568563;
+    border: 0.75em solid #568563;
     grid-gap: 1em;
 }
 .donate div img{
-    border: 0.25em solid darkred;
+    border: 0.25em solid #568563;
     border-radius: 0.5em;
 }
 form {
