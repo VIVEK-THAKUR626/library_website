@@ -37,7 +37,7 @@ a:hover{
     background-image: url(Tagore_library.jpg);
     background-size: cover;
     height: 35em;
-    opacity: 0.9;
+    opacity: 0.98;
     filter: brightness(50%);
 }
 .main #intro{
