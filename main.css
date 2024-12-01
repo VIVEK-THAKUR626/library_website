@@ -3,91 +3,132 @@
 }
 .header{
     display: flex;
-    justify-content: space-around;
-    height: 15vh;
-    flex-direction: column;
-    background-color: black;
-}
-.main {
-    display: flex;
-    height: 70vh;
-    background-image: url(Tagore_library.jpg);
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.footer{
-    display: flex;
-    justify-content: space-around;
-    height: 15vh;
-    flex-direction: column;
-    background-color: black;
-}
-.heading{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 900;
-    text-align: center;
-    height: 40%;
-    font-size: 2.5em;
-    flex-shrink: 2;
-    color: white;
-}
-.heading2{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 900;
-    text-align: center;
-    height: 30%;
-    font-size: 1.75em;
-    flex-shrink: 2;
-    color: white;
+    background-color: wheat;
+    justify-content: space-between;
 }
 .navigation{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    height: 30%;
+    align-items: center;
+    gap: 1.5em;
     flex-shrink: 1;
-}
-.contact{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    height: 30%;
-    flex-shrink: 1;
-}
-.contact div{
-    display: inline;
-    font-size: 1.25em;
-    font-weight: 500;
-}
-.navigation div{
-    display: inline;
-    font-size: 1.5em;
-    font-weight: 500;
-    flex-shrink: 1.25;
 }
 a{
     text-decoration: none;
-    color: red;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+    color: darkred;
+    font-size: 1.45em;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-a:hover {
-    background-color: white;
-    color: black;
-    border: 2px solid white;
+a:hover{
+    background-color: black;
+    color: wheat;
+    border: 2px solid black;
     border-radius: 5px;
     padding: 0.3em;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.main #image{
+    background-image: url(Tagore_library.jpg);
+    background-size: cover;
+    height: 35em;
+    opacity: 0.9;
+    filter: brightness(50%);
+}
+.main #intro{
+    z-index: 1;
+    position: absolute;
+    align-self: center;
+    top: 11.75em;
+    flex-shrink: 1;
+}
+h1{
+    color: wheat;
+    font-size: 8.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 10px 10px 10px black;
+}
+.info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: black;
+    border: 0.75em solid black;
+    border-radius: 1.25em;
+    margin: 0.40em;
+    align-items: center;
+    grid-gap: 0.15em;
+    overflow: scroll;
+}
+.info div img{
+    width: 45em;
+    height: 25em;
+    border: 0.25em solid black;
+    border-radius: 0.5em;
 }
 p{
-    color: lightgreen;
+    color: wheat;
+    font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   
+    font-size: 1.25em;
+    text-align: center;
+    word-spacing: 0.75em;
+    letter-spacing: 0.10em;
+    text-shadow: 5px 5px 11px gold;
 }
-@media (max-width: 768px) {
-    .heading {
-        font-size: 2em;
-    }
-    .navigation div, .contact div {
-        font-size: 1.25em;
-    }
+.donate{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: darkred;
+    border: 0.75em solid darkred;
+    grid-gap: 1em;
+}
+.donate div img{
+    border: 0.25em solid darkred;
+    border-radius: 0.5em;
+}
+form {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    width: 60%;
+}
+input, label {
+    font-size: 1.5rem; /* Adjust font size */
+    width: 120%; /* Make input fields full-width */
+    margin-bottom: 15px; /* Add spacing between fields */
+}
+label{
+    color: wheat;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 5px 5px 11px gold;;
+}
+#button{
+    width: 50%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.footer{
+    display: flex;
+    background-color: wheat;
+    justify-content: space-evenly;
+    height: 5em;
+    align-items: center;
+}
+.footer > div > p{
+    color: black;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-shadow: 5px 5px 11px gray;
+}
+#button:hover{
+    background-color: black;
+    color: wheat;
+    border: 0.15em solid black;
+    border-radius: 0.5em;
+    transition: all 0.5s ease;
 }
