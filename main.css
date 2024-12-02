@@ -93,6 +93,9 @@ p{
     border: 0.25em solid #568563;
     border-radius: 0.5em;
 }
+#form > p{
+    margin: 1.5em;
+}
 form {
     display: flex;
     flex-direction: column; /* Stack items vertically */
